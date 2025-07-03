@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" spacing="20" style="-fx-background-color: linear-gradient(to bottom, #ffffff, #f2f2f7);              -fx-padding: 20; -fx-border-color: #dcdde1;              -fx-border-radius: 10; -fx-background-radius: 10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="studentmanagementsystemm.TeacherStudentsController">
+
+    <Label style="-fx-font-size: 18px;                   -fx-font-weight: bold;                   -fx-text-fill: #2c3e50;" text="👥 Enrolled Students" />
+
+    <TableView fx:id="studentsTable" prefHeight="400" prefWidth="551.0" style="-fx-border-radius: 6;                       -fx-background-radius: 6;                       -fx-border-color: #ccc;">
+
+        <columns>
+            <TableColumn fx:id="studentIdCol" prefWidth="100" text="Student ID" />
+            <TableColumn fx:id="studentNameCol" prefWidth="250" text="Name" />
+            <TableColumn fx:id="courseNameCol" prefWidth="250" text="Course" />
+        </columns>
+    </TableView>
+</VBox>

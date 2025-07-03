@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="studentmanagementsystemm.TeacherController"
+            prefWidth="800" prefHeight="600"
+            style="-fx-background-color: linear-gradient(to bottom, #f4f4f9, #e0e0ef);">
+
+    <VBox spacing="20" alignment="TOP_CENTER"
+          AnchorPane.topAnchor="20.0"
+          AnchorPane.leftAnchor="20.0"
+          AnchorPane.rightAnchor="20.0">
+
+        <Label fx:id="welcomeLabel"
+               style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" />
+
+        <HBox spacing="15" alignment="CENTER">
+            <Button text="👥 Enrolled Students"
+                    onAction="#handleViewEnrolledStudents"
+                    style="-fx-background-color: #8e44ad; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 8px; -fx-padding: 8 16;" />
+
+            <Button text="🕒 Mark Attendance"
+                    onAction="#handleMarkAttendance"
+                    style="-fx-background-color: #2980b9; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 8px; -fx-padding: 8 16;" />
+
+            <Button text="📝 Assign Grades"
+                    onAction="#handleAssignGrades"
+                    style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 8px; -fx-padding: 8 16;" />
+
+            <Button text="🚪 Logout"
+                    onAction="#handleLogout"
+                    style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-background-radius: 8px; -fx-padding: 8 16;" />
+        </HBox>
+
+        <Separator style="-fx-background-color: #bdc3c7;"/>
+
+        <AnchorPane fx:id="contentPane"
+                    prefHeight="500"
+                    style="-fx-background-color: white; -fx-border-color: #dcdde1; -fx-border-radius: 10; -fx-background-radius: 10;" />
+    </VBox>
+
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="studentmanagementsystemm.AssignUserController"
+           style="-fx-background-color: linear-gradient(to bottom, #f4f4f9, #e0e0ef);">
+
+    <!-- Centered Panel -->
+    <AnchorPane prefWidth="800" prefHeight="600"
+                style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);">
+
+        <VBox spacing="20" alignment="TOP_CENTER"
+              AnchorPane.topAnchor="20.0"
+              AnchorPane.leftAnchor="20.0"
+              AnchorPane.rightAnchor="20.0">
+
+            <!-- Header Label -->
+            <Label text="👤 Assign Course / Enroll Student"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" />
+
+            <!-- Horizontal layout of two sections -->
+            <HBox spacing="30" alignment="TOP_CENTER">
+
+                <!-- Assign Course to Teacher -->
+                <VBox spacing="10" prefWidth="350"
+                      style="-fx-padding: 15; -fx-background-color: #ffffff; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #cccccc;">
+                    <Label text="📘 Assign Course to Teacher"
+                           style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+                    <Label text="Teacher Username:" />
+                    <TextField fx:id="teacherUsernameField" promptText="Enter teacher username" />
+
+                    <Label text="Course Code:" />
+                    <TextField fx:id="courseCodeField" promptText="Enter course code" />
+
+                    <Button text="Assign Course"
+                            onAction="#handleAssignCourse"
+                            style="-fx-background-color: #8e44ad; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 8 16; -fx-background-radius: 8;" />
+                </VBox>
+
+                <!-- Enroll Student in Course -->
+                <VBox spacing="10" prefWidth="350"
+                      style="-fx-padding: 15; -fx-background-color: #ffffff; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #cccccc;">
+                    <Label text="🧑‍🎓 Enroll Student in Course"
+                           style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+                    <Label text="Student Username:" />
+                    <TextField fx:id="studentUsernameField" promptText="Enter student username" />
+
+                    <Label text="Course Code:" />
+                    <TextField fx:id="enrollCourseCodeField" promptText="Enter course code" />
+
+                    <Button text="Enroll Student"
+                            onAction="#handleEnrollStudent"
+                            style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 8 16; -fx-background-radius: 8;" />
+                </VBox>
+
+            </HBox>
+        </VBox>
+    </AnchorPane>
+
+</StackPane>
+
+

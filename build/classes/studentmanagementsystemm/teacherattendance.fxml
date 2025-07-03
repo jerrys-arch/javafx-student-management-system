@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="studentmanagementsystemm.TeacherattendanceController"
+           style="-fx-background-color: linear-gradient(to bottom, #ffffff, #f2f2f7);">
+
+    <VBox spacing="20" maxWidth="700" alignment="TOP_CENTER"
+          style="-fx-background-color: white;
+                 -fx-border-color: #dcdde1;
+                 -fx-border-radius: 10;
+                 -fx-background-radius: 10;
+                 -fx-padding: 20;">
+
+        <Label text="🕒 Mark Attendance"
+               style="-fx-font-size: 18px;
+                      -fx-font-weight: bold;
+                      -fx-text-fill: #2c3e50;" />
+
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <Label text="Select Course:"
+                   style="-fx-font-size: 14px;" />
+            <ComboBox fx:id="courseComboBox"
+                      prefWidth="300"
+                      style="-fx-background-radius: 6;" />
+        </HBox>
+
+        <!-- Reduced the height of TableView to make space for buttons -->
+        <TableView fx:id="attendanceTable"
+                   prefHeight="200"
+                   style="-fx-border-radius: 6;
+                          -fx-background-radius: 6;
+                          -fx-border-color: #ccc;">
+            <columns>
+                <TableColumn fx:id="studentIdCol" text="Student ID" prefWidth="100"/>
+                <TableColumn fx:id="studentNameCol" text="Student Name" prefWidth="250"/>
+                <TableColumn fx:id="statusCol" text="Status" prefWidth="150"/>
+            </columns>
+        </TableView>
+
+        <!-- Raised the buttons closer to the TableView -->
+        <HBox spacing="15" alignment="CENTER">
+            <Button text="✅ Save Attendance"
+                    onAction="#handleSaveAttendance"
+                    style="-fx-background-color: #27ae60;
+                           -fx-text-fill: white;
+                           -fx-font-size: 14px;
+                           -fx-background-radius: 8px;
+                           -fx-padding: 8 16;" />
+
+            <Button text="❌ Delete Attendance"
+                    onAction="#handleDeleteAttendance"
+                    style="-fx-background-color: #e74c3c;
+                           -fx-text-fill: white;
+                           -fx-font-size: 14px;
+                           -fx-background-radius: 8px;
+                           -fx-padding: 8 16;" />
+        </HBox>
+
+    </VBox>
+</StackPane>

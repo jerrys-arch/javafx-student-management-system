@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="STUDENTMANAGEMENTSYSTEMM.jnlp">
+  <information>
+    <title>STUDENTMANAGEMENTSYSTEMM</title>
+    <vendor>user</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="STUDENTMANAGEMENTSYSTEMM.jar" size="58331" download="eager" />
+    <jar href="lib\mysql-connector-j-9.3.0.jar" size="2593726" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="studentmanagementsystemm.STUDENTMANAGEMENTSYSTEMM"  name="STUDENTMANAGEMENTSYSTEMM" />
+  <update check="always"/>
+</jnlp>
