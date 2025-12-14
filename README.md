@@ -43,34 +43,7 @@ FXML	UI layout definition
 MySQL	Database
 JDBC	Database connectivity
 CSS (inline)	UI styling
-Scene Builder	FXML design (optional)
-studentmanagementsystemm/
-├── controllers/
-│   ├── AdminController.java
-│   ├── AssignUserController.java
-│   ├── StudentGradesController.java
-│   ├── StudentAttendanceController.java
-│   └── TeacherDashboardController.java
-│
-├── models/
-│   ├── User.java
-│   ├── Course.java
-│   ├── Enrollment.java
-│   ├── Grade.java
-│   └── Attendance.java
-│
-├── fxml/
-│   ├── admin_dashboard.fxml
-│   ├── assign_user.fxml
-│   ├── student_grades.fxml
-│   ├── student_attendance.fxml
-│   └── teacher_dashboard.fxml
-│
-├── database/
-│   └── DatabaseConnection.java
-│
-└── Main.java
-
+Scene Builder	FXML design 
 
 🗄️ Database Schema (Overview)
 
