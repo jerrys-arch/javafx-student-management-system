@@ -44,9 +44,7 @@ MySQL	Database
 JDBC	Database connectivity
 CSS (inline)	UI styling
 Scene Builder	FXML design (optional)
-🧱 Project Architecture
 studentmanagementsystemm/
-│
 ├── controllers/
 │   ├── AdminController.java
 │   ├── AssignUserController.java
@@ -72,6 +70,7 @@ studentmanagementsystemm/
 │   └── DatabaseConnection.java
 │
 └── Main.java
+
 
 🗄️ Database Schema (Overview)
 
